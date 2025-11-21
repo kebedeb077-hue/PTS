@@ -1,0 +1,29 @@
+vti_encoding:SR|utf8-nl
+vti_author:SR|MEHMET\\Mehmet
+vti_modifiedby:SR|MEHMET\\Mehmet
+vti_timelastmodified:TR|13 Apr 2007 21:48:15 -0000
+vti_timecreated:TR|13 Apr 2007 21:48:15 -0000
+vti_extenderversion:SR|5.0.2.2623
+vti_lineageid:SR|{13B759A3-873D-4EE0-983E-A790D75EC2D0}
+vti_backlinkinfo:VX|
+vti_excludefromtoc:SW|y
+vti_lastmodifiedbyproduct:SW|fp40
+vti_title:SR|Web Settings for Active Server Pages
+vti_nexttolasttimemodified:TR|13 Apr 2007 21:48:15 -0000
+connectionstatus:SW|test=2
+vti_cacheddtm:TX|13 Apr 2007 21:48:16 -0000
+vti_filesize:IR|3046
+vti_cachedtitle:SR|Web Settings for Active Server Pages
+vti_cachedlinkinfo:VX|D|X-DATACONN:///C:/Documents\\ and\\ Settings/Mehmet/My\\ Documents/Inventory\\ System/test/DRIVER={Microsoft\\ Access\\ Driver\\ (*.mdb)};DBQ=URL=Database/test.mdb H|Database/test.mdb W|Database
+vti_cachedsvcrellinks:VX|NDUS|X-DATACONN:///C:/Documents\\ and\\ Settings/Mehmet/My\\ Documents/Inventory\\ System/test/DRIVER={Microsoft\\ Access\\ Driver\\ (*.mdb)};DBQ=URL=Database/test.mdb NHUS|Database/test.mdb
+vti_cachedneedsrewrite:BR|false
+vti_cachedhasbots:BR|false
+vti_cachedhastheme:BR|false
+vti_cachedhasborder:BR|false
+vti_cacheddataconns:VR|test
+vti_cacheddataconnattrs_test:VR|_type=fp40 connectionstring=DRIVER={Microsoft\\ Access\\ Driver\\ (*.mdb)};DBQ=URL=Database/test.mdb connectiontimeout=15 commandtimeout=30 cursorlocation=3 runtimeusername= runtimepassword=
+vti_error0:SX|The data connection 'test' refers to a Microsoft Access database file 'Database/test.mdb' that is not in the special web folder 'fpdb' created by FrontPage. Move the file into this folder to avoid potential security problems.
+vti_error:IX|1
+vti_charset:SR|windows-1252
+vti_cachedcustomprops:VX|connectionstatus
+vti_syncwith_mehmet\:80:TR|13 Apr 2007 21:48:15 -0000

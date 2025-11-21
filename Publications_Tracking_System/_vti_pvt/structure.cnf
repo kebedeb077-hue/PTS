@@ -1,0 +1,16 @@
+3.0.0.507
+1020
+1001,Default.asp,0,Home Page,0,1180135217,1
+vti_globalpage:BW|true
+1000,index.asp,0,Home Page,0,1178566563,1
+vti_globalpage:BW|true
+1014,bofed_store.asp,0,BoFED Store,1001,1184096734,0
+1016,shipments.asp,0,Offices,1001,1184347510,0
+1005,reports.asp,0,Reports,1001,1184096416,0
+1010,office_list.asp,0,Office List,1001,1184181271,0
+1011,form_list.asp,0,Form List,1001,1184096527,0
+1019,backup.asp,0,Backup,1001,1184965751,0
+1009,about.htm,0,Help,1001,1184351249,0
+1015,form_transaction_history.asp,0,Form Transaction History,1014,1184096896,0
+1017,office_shipment_history.asp,0,Office Shipment History,1016,1184612344,0
+1018,office_deposit_history.asp,0,Office Deposit History,1016,1184619821,0
