@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/(.*)", "dest": "/Publications_Tracking_System/$1" }
+  ]
+}

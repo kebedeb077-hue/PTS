@@ -1,0 +1,7 @@
+# Exclude Access DB files and local deployment artifacts from Vercel
+**/*.mdb
+deploy/
+_vti_cnf/
+_vti_pvt/
+Thumbs.db
+desktop.ini
