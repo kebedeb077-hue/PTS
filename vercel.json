@@ -1,6 +1,15 @@
 {
   "version": 2,
+  "public": true,
+  "buildCommand": "npm run build -w frontend",
+  "outputDirectory": "packages/frontend/dist",
+  "env": {
+    "VITE_API_URL": "@VITE_API_URL"
+  },
   "routes": [
-    { "src": "/(.*)", "dest": "/Publications_Tracking_System/$1" }
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
   ]
 }

@@ -1,0 +1,16 @@
+node_modules/
+dist/
+build/
+.env.local
+.env.*.local
+deploy/
+*.mdb
+migrations/data/*.csv
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+coverage/
+.next/
+out/

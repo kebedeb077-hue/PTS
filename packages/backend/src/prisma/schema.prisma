@@ -1,0 +1,108 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String
+  name      String?
+  role      String   @default("user") // "user", "admin"
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("users")
+}
+
+model Form {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String?
+  data        Json? // flexible JSON for form fields
+  status      String   @default("draft") // "draft", "submitted", "approved"
+  createdBy   Int
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  histories FormHistory[]
+
+  @@map("forms")
+}
+
+model FormHistory {
+  id        Int      @id @default(autoincrement())
+  formId    Int
+  action    String // "created", "updated", "submitted", "approved"
+  changes   Json? // what changed
+  createdAt DateTime @default(now())
+
+  form Form @relation(fields: [formId], references: [id], onDelete: Cascade)
+
+  @@index([formId])
+  @@map("form_histories")
+}
+
+model Office {
+  id        Int    @id @default(autoincrement())
+  name      String @unique
+  location  String?
+  manager   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  deposits   OfficeDeposit[]
+  shipments  OfficeShipment[]
+
+  @@map("offices")
+}
+
+model OfficeDeposit {
+  id        Int      @id @default(autoincrement())
+  officeId  Int
+  amount    Float
+  date      DateTime
+  notes     String?
+  createdAt DateTime @default(now())
+
+  office Office @relation(fields: [officeId], references: [id], onDelete: Cascade)
+
+  @@index([officeId])
+  @@map("office_deposits")
+}
+
+model OfficeShipment {
+  id        Int      @id @default(autoincrement())
+  officeId  Int
+  itemName  String
+  quantity  Int
+  date      DateTime
+  notes     String?
+  createdAt DateTime @default(now())
+
+  office Office @relation(fields: [officeId], references: [id], onDelete: Cascade)
+
+  @@index([officeId])
+  @@map("office_shipments")
+}
+
+model Shipment {
+  id        Int      @id @default(autoincrement())
+  item      String
+  quantity  Int
+  source    String?
+  destination String?
+  status    String   @default("pending")
+  date      DateTime @default(now())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("shipments")
+}
